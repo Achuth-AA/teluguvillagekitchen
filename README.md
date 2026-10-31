@@ -94,7 +94,7 @@ The site doesn't have a full menu. The **What we serve** section (`#menu`, `src/
 - To change the price or wording, edit the `veg-meals` item in `src/data/menu.json` (`price`, `name`, `telugu`, `description`).
 - To change the photo, the review quote or the item it points to, edit `vegMeal` in the same file.
 
-The other items in `menu.json` are dishes only, with no prices. They feed the Signature Dishes scroller (`"signature": true`), the marquee, and Build-Your-Bhojanam (`bhojanam.steps` sets the order and where each dish sits on the leaf, as % of the leaf). A dish only shows a price when its `price` is a number.
+The other items in `menu.json` are dishes only, with no prices. They feed the Signature Dishes scroller (`"signature": true`), the marquee, and Build-Your-Bhojanam (`bhojanam.steps` sets the order and where each dish sits on the plate, as % of the plate). A dish only shows a price when its `price` is a number.
 
 ## Edit contact details
 

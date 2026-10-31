@@ -22,7 +22,7 @@ export default function VegMeal() {
             eyebrow="What we serve"
             telugu={item.telugu}
             teluguEn="veg meals"
-            title={<>{item.name}, <em>on a banana leaf.</em></>}
+            title={<>{item.name}, <em>served hot.</em></>}
           />
 
           <p className="vegmeal-price" aria-label={`${item.name} costs ${menu.currency}${item.price}`}>

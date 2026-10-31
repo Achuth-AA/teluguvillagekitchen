@@ -171,7 +171,7 @@ export default function Hero({ ready }) {
             preload="auto"
             poster={poster}
             onError={() => setVideoOk(false)}
-            aria-label="Film: a village courtyard kitchen, rice and gongura served on a banana leaf, a full Andhra bhojanam"
+            aria-label="Film: a village courtyard kitchen, rice, gongura, pappu and curry being served, a full Andhra bhojanam"
           >
             <source src={isMobile ? hero.videoMobile : hero.video} type="video/mp4" onError={() => setVideoOk(false)} />
           </video>
@@ -202,7 +202,7 @@ export default function Hero({ ready }) {
         <span className="hero-te-en">{hero.intro.english}</span>
       </p>
 
-      <ol className="hero-dishes" aria-label="On the leaf">
+      <ol className="hero-dishes" aria-label="In the meal">
         {hero.dishes.map((d) => (
           <li key={d.name} className="hero-dish">
             <span lang="te">{d.telugu}</span> {d.name}

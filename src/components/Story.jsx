@@ -3,7 +3,7 @@ import { gsap } from '../lib/motion';
 import { site } from '../lib/content';
 import SectionHeading from './SectionHeading';
 
-/** Fire → Clay Pot → Banana Leaf. Pinned on desktop; stacked reveals on mobile. */
+/** Fire → Clay Pot → Bhojanam. Pinned on desktop; stacked reveals on mobile. */
 export default function Story() {
   const root = useRef(null);
 

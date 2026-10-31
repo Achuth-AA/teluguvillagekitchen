@@ -7,38 +7,25 @@ import { ArrowIcon } from './Icons';
 
 const steps = menu.bhojanam.steps.map((s) => ({ ...s, item: itemById[s.id] })).filter((s) => s.item);
 
-const LEAF = "M30 300 C 60 120, 240 52, 470 46 C 700 40, 900 70, 978 150 C 992 240, 990 330, 975 420 C 880 500, 690 522, 470 516 C 250 512, 70 470, 30 300 Z";
-
-function Leaf() {
+function Plate() {
   return (
-    <svg className="leaf-svg" viewBox="0 0 1000 560" aria-hidden="true" preserveAspectRatio="none">
+    <svg className="plate-svg" viewBox="0 0 600 600" aria-hidden="true">
       <defs>
-        <linearGradient id="leaf-g" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="oklch(0.6 0.15 140)" />
-          <stop offset="0.5" stopColor="oklch(0.52 0.14 142)" />
-          <stop offset="1" stopColor="oklch(0.46 0.12 145)" />
-        </linearGradient>
+        <radialGradient id="plate-rim" cx="0.45" cy="0.4" r="0.65">
+          <stop offset="0" stopColor="oklch(0.66 0.12 48)" />
+          <stop offset="1" stopColor="oklch(0.5 0.11 42)" />
+        </radialGradient>
+        <radialGradient id="plate-well" cx="0.45" cy="0.42" r="0.6">
+          <stop offset="0" stopColor="oklch(0.74 0.09 60)" />
+          <stop offset="1" stopColor="oklch(0.62 0.11 50)" />
+        </radialGradient>
       </defs>
-      <clipPath id="leaf-clip">
-        <path d={LEAF} />
-      </clipPath>
-      <path
-        d={LEAF}
-        fill="url(#leaf-g)"
-      />
-      <path d="M30 300 C 300 286, 650 282, 985 286" stroke="oklch(0.78 0.1 120)" strokeWidth="5" fill="none" strokeLinecap="round" />
-      <g stroke="oklch(0.6 0.12 138 / 0.55)" strokeWidth="1.4" fill="none" clipPath="url(#leaf-clip)">
-        {Array.from({ length: 26 }, (_, i) => {
-          const x = 80 + i * 35;
-          return (
-            <g key={i}>
-              <path d={`M${x} 290 C ${x + 20} 220, ${x + 40} 150, ${x + 52} ${70 + Math.abs(13 - i) * 2}`} />
-              <path d={`M${x} 292 C ${x + 20} 360, ${x + 40} 430, ${x + 52} ${500 - Math.abs(13 - i) * 2}`} />
-            </g>
-          );
-        })}
+      <circle cx="300" cy="300" r="292" fill="url(#plate-rim)" />
+      <circle cx="300" cy="300" r="250" fill="url(#plate-well)" />
+      <g fill="none" stroke="oklch(0.85 0.06 70 / 0.55)" strokeWidth="2" strokeLinecap="round">
+        <circle cx="300" cy="300" r="270" strokeDasharray="2 14" />
+        <circle cx="300" cy="300" r="250" />
       </g>
-      <path d="M978 150 C 960 160, 952 176, 960 196 L 975 186 Z" fill="var(--c-bg)" opacity="0.9" />
     </svg>
   );
 }
@@ -63,11 +50,11 @@ export default function Bhojanam() {
     const el = root.current;
     const q = gsap.utils.selector(el);
     if (prefersReducedMotion()) {
-      gsap.set(q('.leaf-dish, .bhojanam-cta'), { opacity: 1, scale: 1, y: 0 });
+      gsap.set(q('.plate-dish, .bhojanam-cta'), { opacity: 1, scale: 1, y: 0 });
       return;
     }
     const ctx = gsap.context(() => {
-      gsap.set(q('.leaf-dish'), { opacity: 0, y: -120, scale: 0.4, rotate: -25 });
+      gsap.set(q('.plate-dish'), { opacity: 0, y: -120, scale: 0.4, rotate: -25 });
       gsap.set(q('.bhojanam-cta'), { opacity: 0, y: 30 });
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -75,16 +62,16 @@ export default function Bhojanam() {
           onUpdate: (self) => setActive(Math.min(steps.length - 1, Math.floor(self.progress * (steps.length + 0.6)) - 0)),
         },
       });
-      q('.leaf-dish').forEach((d, i) => {
+      q('.plate-dish').forEach((d, i) => {
         tl.to(d, { opacity: 1, y: 0, scale: 1, rotate: 0, duration: 1, ease: 'back.out(2.2)' }, i * 1.1);
       });
-      tl.to(q('.leaf-wrap')[0], { scale: 1.04, duration: 1, ease: 'sine.inOut' }, '+=0.1');
+      tl.to(q('.plate-wrap')[0], { scale: 1.04, duration: 1, ease: 'sine.inOut' }, '+=0.1');
       tl.to(q('.bhojanam-cta'), { opacity: 1, y: 0, duration: 0.8 }, '<');
     }, el);
     return () => ctx.revert();
   }, [mobile]);
 
-  // Mobile: swipe sequence drives which dishes are on the leaf.
+  // Mobile: swipe sequence drives which dishes are on the plate.
   useEffect(() => {
     if (!mobile) return;
     const cards = strip.current.querySelectorAll('.swipe-card');
@@ -98,7 +85,7 @@ export default function Bhojanam() {
 
   useEffect(() => {
     if (!mobile) return;
-    const dishes = root.current.querySelectorAll('.leaf-dish');
+    const dishes = root.current.querySelectorAll('.plate-dish');
     const reduced = prefersReducedMotion();
     dishes.forEach((d, i) => {
       const on = i <= active;
@@ -120,7 +107,7 @@ export default function Bhojanam() {
     <section id="bhojanam" ref={root} className="bhojanam" aria-labelledby="bhojanam-title">
       <div className="bhojanam-stage">
         <div className="wrap bhojanam-head">
-          <SectionHeading id="bhojanam-title" eyebrow="Build your bhojanam" telugu="భోజనం" teluguEn="the full meal" title={<>One leaf. <em>Everything</em> on it.</>} />
+          <SectionHeading id="bhojanam-title" eyebrow="Build your bhojanam" telugu="భోజనం" teluguEn="the full meal" title={<>One meal. <em>Everything</em> in it.</>} />
           <p className="bhojanam-count" aria-live="polite">
             <span className="count-num">{String(Math.max(0, active + 1)).padStart(2, '0')}</span>
             <span className="count-of">/ {String(steps.length).padStart(2, '0')}</span>
@@ -128,12 +115,12 @@ export default function Bhojanam() {
           </p>
         </div>
 
-        <div className="leaf-wrap">
-          <Leaf />
+        <div className="plate-wrap">
+          <Plate />
           {steps.map((s, i) => (
             <figure
               key={s.id}
-              className={`leaf-dish ${i === active ? 'is-current' : ''}`}
+              className={`plate-dish ${i === active ? 'is-current' : ''}`}
               style={{ left: `${s.x}%`, top: `${s.y}%`, width: `${s.size}%` }}
             >
               <img src={s.item.image} alt={s.item.name} width="360" height="360" loading="lazy" decoding="async" />
@@ -153,7 +140,7 @@ export default function Bhojanam() {
 
         {mobile && (
           <div className="swipe">
-            <div className="swipe-strip" ref={strip} tabIndex={0} aria-label="Swipe to add dishes to the leaf">
+            <div className="swipe-strip" ref={strip} tabIndex={0} aria-label="Swipe to add dishes to the plate">
               {steps.map((s, i) => (
                 <article key={s.id} className="swipe-card" data-index={i}>
                   <p className="swipe-step">{String(i + 1).padStart(2, '0')}</p>

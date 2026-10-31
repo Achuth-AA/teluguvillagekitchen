@@ -3,13 +3,13 @@
    ---------------------------------------------------------------------
    Source of truth: logo.png. The logo file was NOT included with the
    brief, so this is the brief's documented FALLBACK palette
-   (turmeric, chilli/gongura red, banana-leaf green, clay, rice-cream,
+   (turmeric, chilli/gongura red, leaf green, clay, rice-cream,
    wood-smoke charcoal). When the real logo arrives, sample its colours
    and replace the hue/chroma values below, keeping the same roles.
 
    role        token              OKLCH                 approx hex
    primary     --c-primary        0.47 0.165 27         #a32321  gongura red
-   secondary   --c-secondary      0.47 0.110 145        #2c6a31  banana leaf
+   secondary   --c-secondary      0.47 0.110 145        #2c6a31  leaf green
    accent      --c-accent         0.80 0.150 80         #f0b135  turmeric
    clay        --c-clay           0.58 0.120 45         #b36139  terracotta
    background  --c-bg             0.965 0.018 82        #faf3e6  rice cream

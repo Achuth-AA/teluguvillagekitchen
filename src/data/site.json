@@ -216,15 +216,15 @@
     },
     {
       "step": "03",
-      "title": "Banana Leaf",
-      "telugu": "అరిటాకు",
-      "teluguEn": "the banana leaf",
+      "title": "Bhojanam",
+      "telugu": "భోజనం",
+      "teluguEn": "the meal",
       "image": "/media/gallery/f-13.webp",
-      "alt": "A full Andhra meal served on a banana leaf",
+      "alt": "A full Andhra vegetarian meal with rice, pachadi, pappu, appadams and buttermilk",
       "lines": [
-        "Then it all comes together",
-        "on a fresh banana leaf —",
-        "rice, pappu, pachadi, ghee.",
+        "Then it all comes together —",
+        "rice, pappu, pachadi, ghee,",
+        "served hot, the way it is at home.",
         "Eat with your hands. Ask for more."
       ]
     }
@@ -232,19 +232,19 @@
   "gallery": [
     {
       "src": "/media/gallery/f-1.webp",
-      "alt": "Village courtyard kitchen with banana trees and a thatched roof, morning light",
+      "alt": "Village courtyard kitchen with a thatched roof, morning light",
       "w": 960,
       "h": 540
     },
     {
       "src": "/media/dishes/gongura.webp",
-      "alt": "Gongura pachadi spooned onto a banana leaf",
+      "alt": "Gongura pachadi, freshly served",
       "w": 360,
       "h": 360
     },
     {
       "src": "/media/gallery/f-13.webp",
-      "alt": "A full Andhra bhojanam on a banana leaf with appadams and buttermilk",
+      "alt": "A full Andhra bhojanam with appadams and buttermilk",
       "w": 960,
       "h": 540
     },
@@ -256,7 +256,7 @@
     },
     {
       "src": "/media/gallery/f-4.5.webp",
-      "alt": "Steaming rice poured onto a banana leaf",
+      "alt": "Steaming rice being served",
       "w": 960,
       "h": 540
     },
@@ -274,7 +274,7 @@
     },
     {
       "src": "/media/dishes/appadam.webp",
-      "alt": "Crisp appadams on the leaf",
+      "alt": "Crisp appadams",
       "w": 360,
       "h": 360
     },

@@ -36,13 +36,15 @@ done
 
 # Square dish close-ups: crop <time> <centerX> <centerY> <size> <name>
 crop() { ffmpeg -v error -y -ss "$1" -i "$SRC" -frames:v 1 -vf "crop=$4:$4:$(( $2 - $4/2 )):$(( $3 - $4/2 )),scale=360:360" -c:v libwebp -quality 74 "$OUT/dishes/$5.webp"; }
-crop 4.0 720 420 440 rice
-crop 5.5 420 420 420 gongura
-crop 6.5 640 330 440 ghee
-crop 8.0 780 320 460 pappu
+crop 6.8 640 400 300 rice
+crop 5.5 430 420 280 gongura
+crop 6.5 650 400 240 ghee
+crop 8.0 790 330 320 pappu
 crop 9.0 600 330 520 chicken
-crop 13 220 480 200 buttermilk
-crop 13 880 450 260 appadam
+crop 13 222 478 130 buttermilk
+crop 13 900 440 120 appadam
 
 ls -la "$OUT"/*.mp4
+ffmpeg -v error -y -ss 12 -i "$SRC" -frames:v 1 -vf "crop=640:560:0:160,scale=800:-2" -c:v libwebp -quality 74 "$OUT/veg-meal.webp"
+
 echo "Done. Re-render the share image with: node scripts/make-og.cjs"

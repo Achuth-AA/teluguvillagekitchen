@@ -6,7 +6,7 @@
       "id": "veg-meals",
       "name": "Veg Meals",
       "telugu": "శాకాహార భోజనం",
-      "description": "A full vegetarian meal served on a banana leaf.",
+      "description": "A full, homely vegetarian meal, served hot.",
       "price": 130,
       "spice": 2,
       "veg": true,
@@ -50,7 +50,7 @@
       "id": "white-rice",
       "name": "Steamed Rice",
       "telugu": "అన్నం",
-      "description": "Hot rice served straight onto the leaf.",
+      "description": "Hot rice, served fresh.",
       "price": null,
       "spice": 0,
       "veg": true,
@@ -92,56 +92,56 @@
     }
   ],
   "bhojanam": {
-    "_note": "Order and position (percent of the leaf) of dishes in the Build Your Bhojanam section. ids refer to items above.",
+    "_note": "Order and position (percent of the plate) of dishes in the Build Your Bhojanam section. ids refer to items above.",
     "steps": [
       {
         "id": "white-rice",
         "label": "Annam",
-        "x": 46,
-        "y": 52,
-        "size": 21
+        "x": 50,
+        "y": 50,
+        "size": 28
       },
       {
         "id": "gongura-pachadi",
         "label": "Gongura",
-        "x": 25,
-        "y": 30,
-        "size": 12
+        "x": 27,
+        "y": 28,
+        "size": 17
       },
       {
         "id": "neyyi-annam",
         "label": "Neyyi",
-        "x": 56,
-        "y": 38,
-        "size": 9
+        "x": 59,
+        "y": 41,
+        "size": 12
       },
       {
         "id": "muddha-pappu-neyyi",
         "label": "Pappu",
-        "x": 72,
-        "y": 30,
-        "size": 14
+        "x": 74,
+        "y": 31,
+        "size": 20
       },
       {
         "id": "andhra-chicken-curry",
         "label": "Kodi Kura",
-        "x": 76,
-        "y": 67,
-        "size": 16
+        "x": 71,
+        "y": 72,
+        "size": 22
       },
       {
         "id": "appadam",
         "label": "Appadam",
         "x": 30,
-        "y": 72,
-        "size": 14
+        "y": 73,
+        "size": 20
       },
       {
         "id": "majjiga",
         "label": "Majjiga",
-        "x": 11,
+        "x": 15,
         "y": 50,
-        "size": 10
+        "size": 14
       }
     ]
   },
@@ -149,7 +149,7 @@
     "_note": "The highlighted offer in the 'What we serve' section.",
     "itemId": "veg-meals",
     "image": "/media/veg-meal.webp",
-    "imageAlt": "A vegetarian meal on a banana leaf: rice, gongura pachadi, pappu and buttermilk",
+    "imageAlt": "A vegetarian meal: rice, gongura pachadi, pappu and buttermilk",
     "reviewAuthor": "Bhaskar Yerra"
   }
 }
