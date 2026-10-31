@@ -1,0 +1,53 @@
+/* =====================================================================
+   PALETTE — Telugu Village Kitchen
+   ---------------------------------------------------------------------
+   Source of truth: logo.png. The logo file was NOT included with the
+   brief, so this is the brief's documented FALLBACK palette
+   (turmeric, chilli/gongura red, leaf green, clay, rice-cream,
+   wood-smoke charcoal). When the real logo arrives, sample its colours
+   and replace the hue/chroma values below, keeping the same roles.
+
+   role        token              OKLCH                 approx hex
+   primary     --c-primary        0.47 0.165 27         #a32321  gongura red
+   secondary   --c-secondary      0.47 0.110 145        #2c6a31  leaf green
+   accent      --c-accent         0.80 0.150 80         #f0b135  turmeric
+   clay        --c-clay           0.58 0.120 45         #b36139  terracotta
+   background  --c-bg             0.965 0.018 82        #faf3e6  rice cream
+   surface     --c-surface        0.925 0.030 75        #f2e4d1
+   text-dark   --c-text-dark      0.25 0.018 50         #291f1a  wood smoke
+   text-light  --c-text-light     0.97 0.014 85         #f9f5eb
+   border      --c-border         0.80 0.040 70         #cfbaa3
+
+   WCAG AA checks (run `npm run check:contrast`; hue never changed,
+   only lightness): text-dark/bg, text-dark/surface, primary/bg,
+   secondary/bg, clay-ink/bg, text-light/primary, text-light/secondary,
+   text-light/text-dark, text-dark/accent — all ≥ 4.5:1.
+   ===================================================================== */
+:root {
+  --c-primary: oklch(0.47 0.165 27);
+  --c-secondary: oklch(0.47 0.11 145);
+  --c-accent: oklch(0.8 0.15 80);
+  --c-clay: oklch(0.58 0.12 45);
+  --c-clay-ink: oklch(0.5 0.12 45);
+  --c-bg: oklch(0.965 0.018 82);
+  --c-surface: oklch(0.925 0.03 75);
+  --c-text-dark: oklch(0.25 0.018 50);
+  --c-text-light: oklch(0.97 0.014 85);
+  --c-border: oklch(0.8 0.04 70);
+  --c-steam: oklch(0.97 0.04 85 / 0.55);
+
+  --ff-display: 'Fraunces', 'Fraunces-fallback', Georgia, serif;
+  --ff-body: 'Manrope', 'Manrope-fallback', system-ui, sans-serif;
+  --ff-telugu: 'Tiro Telugu', 'Noto Serif Telugu', serif;
+
+  --fs-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.84rem);
+  --fs-sm: clamp(0.875rem, 0.84rem + 0.18vw, 0.98rem);
+  --fs-base: clamp(1rem, 0.96rem + 0.22vw, 1.13rem);
+  --fs-lg: clamp(1.2rem, 1.1rem + 0.5vw, 1.5rem);
+  --fs-xl: clamp(1.6rem, 1.3rem + 1.4vw, 2.6rem);
+  --fs-2xl: clamp(2.2rem, 1.6rem + 3vw, 4.6rem);
+  --fs-3xl: clamp(2.8rem, 1.6rem + 6vw, 8.5rem);
+
+  --gutter: clamp(1rem, 0.6rem + 2vw, 3rem);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
