@@ -47,7 +47,6 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .skip-link { position: fixed; left: 1rem; top: -4rem; z-index: 200; background: var(--c-text-dark); color: var(--c-text-light); padding: 0.6rem 1rem; border-radius: 8px; }
 .skip-link:focus { top: 1rem; }
 [lang='te'] { font-family: var(--ff-telugu); letter-spacing: 0; }
-.check-tag { display: inline-block; margin-left: 0.5em; font-family: var(--ff-body); font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.04em; color: var(--c-primary); background: color-mix(in oklch, var(--c-accent) 35%, transparent); padding: 0.05em 0.45em; border-radius: 4px; }
 
 /* Underline-draw links */
 .link-draw { position: relative; display: inline-block; }

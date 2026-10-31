@@ -1,5 +1,5 @@
 {
-  "_readme": "All brand, contact and hours content lives here. Anything with \"[CHECK]\" or \"placeholder\": true still needs confirming by the owner.",
+  "_readme": "All brand, contact, story, gallery and review content lives here.",
   "brand": {
     "name": "Telugu Village Kitchen",
     "nameTelugu": "తెలుగు విలేజ్ కిచెన్",
@@ -22,96 +22,7 @@
     },
     "mapQuery": "Telugu Village Kitchen, Old Mumbai Hwy, Gachibowli, Hyderabad 500032"
   },
-  "hours": {
-    "_note": "[OPENING HOURS] placeholder — replace with the real hours. Times are 24h, Asia/Kolkata. Each day can have several slots.",
-    "placeholder": true,
-    "timezone": "Asia/Kolkata",
-    "days": {
-      "mon": [
-        [
-          "12:00",
-          "15:30"
-        ],
-        [
-          "19:00",
-          "22:30"
-        ]
-      ],
-      "tue": [
-        [
-          "12:00",
-          "15:30"
-        ],
-        [
-          "19:00",
-          "22:30"
-        ]
-      ],
-      "wed": [
-        [
-          "12:00",
-          "15:30"
-        ],
-        [
-          "19:00",
-          "22:30"
-        ]
-      ],
-      "thu": [
-        [
-          "12:00",
-          "15:30"
-        ],
-        [
-          "19:00",
-          "22:30"
-        ]
-      ],
-      "fri": [
-        [
-          "12:00",
-          "15:30"
-        ],
-        [
-          "19:00",
-          "22:30"
-        ]
-      ],
-      "sat": [
-        [
-          "12:00",
-          "15:30"
-        ],
-        [
-          "19:00",
-          "22:30"
-        ]
-      ],
-      "sun": [
-        [
-          "12:00",
-          "15:30"
-        ],
-        [
-          "19:00",
-          "22:30"
-        ]
-      ]
-    }
-  },
   "social": [
-    {
-      "label": "Instagram",
-      "icon": "instagram",
-      "url": "#",
-      "placeholder": true
-    },
-    {
-      "label": "Facebook",
-      "icon": "facebook",
-      "url": "#",
-      "placeholder": true
-    },
     {
       "label": "Google Maps",
       "icon": "map",

@@ -41,7 +41,7 @@ export default function Footer() {
             const Icon = socialIcon[s.icon];
             return (
               <li key={s.label}>
-                <a href={s.url} target={s.url.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer" aria-label={s.placeholder ? `${s.label} (link coming soon)` : s.label}>
+                <a href={s.url} target={s.url.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer" aria-label={s.label}>
                   {Icon && <Icon />}
                 </a>
               </li>

@@ -21,7 +21,7 @@ Node 18+ required. Deploy `dist/` to any static host (Netlify, Vercel, Cloudflar
 ```
 index.html                  meta tags, Open Graph, Restaurant JSON-LD, fonts
 public/
-  logo.svg                  PLACEHOLDER logo (swap for the real one)
+  logo.svg                  brand mark (swap for the official logo)
   og.jpg                    share image (final video frame + logo + title)
   media/
     hero-video.mp4          16:9 hero film, compressed to ~1.9 MB
@@ -45,22 +45,28 @@ source-media/
   hero-original.mp4         untouched 18 MB original (not served)
 ```
 
-## What still needs the owner's input
+## Adding details later
 
-Search the project for `[CHECK]`, `[OPENING HOURS]` and `"placeholder": true`.
+The site shows only confirmed information. These are left out until real details exist:
 
-| Item | Where | Why |
-| --- | --- | --- |
-| Official logo | `public/logo.svg` → see below | `logo.png` wasn't supplied; a placeholder emblem is used |
-| Palette | `src/styles/tokens.css` | Uses the brief's fallback palette because the logo wasn't available to sample |
-| Andhra Chicken Curry | `src/data/menu.json` | It's in the film and in the Signature/Bhojanam sections, but the listing says "Serves vegetarian dishes". Keep it or delete it |
-| Spice levels | `src/data/menu.json` → `spice` (0–3) | Best guesses; adjust |
-| Opening hours | `src/data/site.json` → `hours` | Placeholder 12–3:30 pm and 7–10:30 pm daily; drives the Open/Closed badge |
-| Social links | `src/data/site.json` → `social` | Instagram/Facebook URLs are `#` |
-| Domain | `index.html` | `https://example.com/` in canonical, OG and JSON-LD |
-| JSON-LD hours / reservations | `index.html` | Placeholders |
+| Detail | How to add it |
+| --- | --- |
+| Opening hours + Open/Closed badge | Add an `hours` block to `src/data/site.json` (format below). The badge and hours table appear automatically |
+| Instagram / Facebook | Add entries to `social` in `src/data/site.json` (`{ "label": "Instagram", "icon": "instagram", "url": "https://…" }`) |
+| Domain | Add `<link rel="canonical">`, an absolute `og:image`, and `url` in the JSON-LD in `index.html`; add `Sitemap:` to `public/robots.txt` |
+| Official logo | See "Swap the logo" below |
 
-Reviews in `site.json` are the three real Google reviews, quoted verbatim. Don't add any that weren't actually written.
+```json
+"hours": {
+  "timezone": "Asia/Kolkata",
+  "days": {
+    "mon": [["12:00", "15:30"], ["19:00", "22:30"]],
+    "tue": [], "wed": [], "thu": [], "fri": [], "sat": [], "sun": []
+  }
+}
+```
+
+Times are 24-hour. A day can have several slots, and an empty list means closed.
 
 ## Swap the logo
 
