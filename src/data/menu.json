@@ -1,0 +1,155 @@
+{
+  "_readme": "Dishes used by the Signature Dishes, Marquee and Build-Your-Bhojanam sections. Only Veg Meals carries a price (₹130); the other dishes are shown without prices.",
+  "currency": "₹",
+  "items": [
+    {
+      "id": "veg-meals",
+      "name": "Veg Meals",
+      "telugu": "శాకాహార భోజనం",
+      "description": "A full vegetarian meal served on a banana leaf.",
+      "price": 130,
+      "spice": 2,
+      "veg": true,
+      "signature": true,
+      "image": "/media/gallery/f-11.5.webp"
+    },
+    {
+      "id": "gongura-pachadi",
+      "name": "Gongura Pachadi",
+      "telugu": "గోంగూర పచ్చడి",
+      "description": "Sour sorrel leaves ground with red chilli and tempered in sesame oil.",
+      "price": null,
+      "spice": 3,
+      "veg": true,
+      "signature": true,
+      "image": "/media/dishes/gongura.webp"
+    },
+    {
+      "id": "muddha-pappu-neyyi",
+      "name": "Pappu with Ghee",
+      "telugu": "పప్పు నెయ్యి",
+      "description": "Soft toor dal, a spoon of golden ghee poured over hot rice.",
+      "price": null,
+      "spice": 1,
+      "veg": true,
+      "signature": true,
+      "image": "/media/dishes/pappu.webp"
+    },
+    {
+      "id": "andhra-chicken-curry",
+      "name": "Andhra Chicken Curry",
+      "telugu": "కోడి కూర",
+      "description": "Village-style curry slow-cooked in a clay pot.",
+      "price": null,
+      "spice": 3,
+      "veg": false,
+      "signature": true,
+      "image": "/media/dishes/chicken.webp"
+    },
+    {
+      "id": "white-rice",
+      "name": "Steamed Rice",
+      "telugu": "అన్నం",
+      "description": "Hot rice served straight onto the leaf.",
+      "price": null,
+      "spice": 0,
+      "veg": true,
+      "signature": false,
+      "image": "/media/dishes/rice.webp"
+    },
+    {
+      "id": "neyyi-annam",
+      "name": "Rice with Ghee",
+      "telugu": "నెయ్యి అన్నం",
+      "description": "Rice finished with a pour of golden ghee.",
+      "price": null,
+      "spice": 0,
+      "veg": true,
+      "signature": true,
+      "image": "/media/dishes/ghee.webp"
+    },
+    {
+      "id": "appadam",
+      "name": "Appadam",
+      "telugu": "అప్పడం",
+      "description": "Crisp fried papad.",
+      "price": null,
+      "spice": 0,
+      "veg": true,
+      "signature": false,
+      "image": "/media/dishes/appadam.webp"
+    },
+    {
+      "id": "majjiga",
+      "name": "Majjiga (Buttermilk)",
+      "telugu": "మజ్జిగ",
+      "description": "Spiced buttermilk with curry leaf and ginger.",
+      "price": null,
+      "spice": 0,
+      "veg": true,
+      "signature": false,
+      "image": "/media/dishes/buttermilk.webp"
+    }
+  ],
+  "bhojanam": {
+    "_note": "Order and position (percent of the leaf) of dishes in the Build Your Bhojanam section. ids refer to items above.",
+    "steps": [
+      {
+        "id": "white-rice",
+        "label": "Annam",
+        "x": 46,
+        "y": 52,
+        "size": 21
+      },
+      {
+        "id": "gongura-pachadi",
+        "label": "Gongura",
+        "x": 25,
+        "y": 30,
+        "size": 12
+      },
+      {
+        "id": "neyyi-annam",
+        "label": "Neyyi",
+        "x": 56,
+        "y": 38,
+        "size": 9
+      },
+      {
+        "id": "muddha-pappu-neyyi",
+        "label": "Pappu",
+        "x": 72,
+        "y": 30,
+        "size": 14
+      },
+      {
+        "id": "andhra-chicken-curry",
+        "label": "Kodi Kura",
+        "x": 76,
+        "y": 67,
+        "size": 16
+      },
+      {
+        "id": "appadam",
+        "label": "Appadam",
+        "x": 30,
+        "y": 72,
+        "size": 14
+      },
+      {
+        "id": "majjiga",
+        "label": "Majjiga",
+        "x": 11,
+        "y": 50,
+        "size": 10
+      }
+    ]
+  },
+  "vegMeal": {
+    "_note": "The highlighted offer in the 'What we serve' section.",
+    "itemId": "veg-meals",
+    "image": "/media/veg-meal.webp",
+    "imageAlt": "A vegetarian meal on a banana leaf: rice, gongura pachadi, pappu and buttermilk",
+    "reviewAuthor": "Bhaskar Yerra"
+  }
+}

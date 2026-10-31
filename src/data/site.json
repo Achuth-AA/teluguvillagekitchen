@@ -1,0 +1,294 @@
+{
+  "_readme": "All brand, contact and hours content lives here. Anything with \"[CHECK]\" or \"placeholder\": true still needs confirming by the owner.",
+  "brand": {
+    "name": "Telugu Village Kitchen",
+    "nameTelugu": "తెలుగు విలేజ్ కిచెన్",
+    "tagline": "Pure village flavours of Andhra, cooked the old way.",
+    "logo": "/logo.svg",
+    "logoAlt": "Telugu Village Kitchen logo",
+    "serviceNote": "Serves vegetarian dishes"
+  },
+  "contact": {
+    "phoneDisplay": "096528 22278",
+    "phoneE164": "+919652822278",
+    "whatsapp": "919652822278",
+    "whatsappMessage": "Hello Telugu Village Kitchen! I'd like to order.",
+    "address": {
+      "street": "Old Mumbai Hwy, Vinayak Nagar, Rajiv Gandhi Nagar, Gachibowli",
+      "locality": "Hyderabad",
+      "region": "Telangana",
+      "postalCode": "500032",
+      "country": "IN"
+    },
+    "mapQuery": "Telugu Village Kitchen, Old Mumbai Hwy, Gachibowli, Hyderabad 500032"
+  },
+  "hours": {
+    "_note": "[OPENING HOURS] placeholder — replace with the real hours. Times are 24h, Asia/Kolkata. Each day can have several slots.",
+    "placeholder": true,
+    "timezone": "Asia/Kolkata",
+    "days": {
+      "mon": [
+        [
+          "12:00",
+          "15:30"
+        ],
+        [
+          "19:00",
+          "22:30"
+        ]
+      ],
+      "tue": [
+        [
+          "12:00",
+          "15:30"
+        ],
+        [
+          "19:00",
+          "22:30"
+        ]
+      ],
+      "wed": [
+        [
+          "12:00",
+          "15:30"
+        ],
+        [
+          "19:00",
+          "22:30"
+        ]
+      ],
+      "thu": [
+        [
+          "12:00",
+          "15:30"
+        ],
+        [
+          "19:00",
+          "22:30"
+        ]
+      ],
+      "fri": [
+        [
+          "12:00",
+          "15:30"
+        ],
+        [
+          "19:00",
+          "22:30"
+        ]
+      ],
+      "sat": [
+        [
+          "12:00",
+          "15:30"
+        ],
+        [
+          "19:00",
+          "22:30"
+        ]
+      ],
+      "sun": [
+        [
+          "12:00",
+          "15:30"
+        ],
+        [
+          "19:00",
+          "22:30"
+        ]
+      ]
+    }
+  },
+  "social": [
+    {
+      "label": "Instagram",
+      "icon": "instagram",
+      "url": "#",
+      "placeholder": true
+    },
+    {
+      "label": "Facebook",
+      "icon": "facebook",
+      "url": "#",
+      "placeholder": true
+    },
+    {
+      "label": "Google Maps",
+      "icon": "map",
+      "url": "https://www.google.com/maps/search/?api=1&query=Telugu+Village+Kitchen+Gachibowli+Hyderabad"
+    }
+  ],
+  "reviews": {
+    "_note": "[REAL REVIEWS] copied verbatim from Google reviews. Do not add or edit reviews that were not actually written.",
+    "source": "Google reviews",
+    "items": [
+      {
+        "author": "Mahimeher Mahi",
+        "meta": "Dinner",
+        "when": "3 weeks ago",
+        "text": "The food is really good and very budget-friendly. The management and staff are also very well-behaved and welcoming. Definitely a must-try!"
+      },
+      {
+        "author": "Bhaskar Yerra",
+        "meta": "Lunch · ₹1–200",
+        "when": "3 days ago",
+        "badge": "Local Guide",
+        "text": "Homely telugu food at reasonable price. I had veg meals and it was very decent for 130/-"
+      },
+      {
+        "author": "Likith Reddy Dhfj",
+        "meta": "₹1–200",
+        "when": "2 weeks ago",
+        "text": "Great andhraaa style fooddd"
+      }
+    ]
+  },
+  "hero": {
+    "_note": "Text overlays synced to hero-video.mp4 currentTime (seconds). Adjust if you swap the video.",
+    "video": "/media/hero-video.mp4",
+    "videoMobile": "/media/hero-video-mobile.mp4",
+    "poster": "/media/poster.webp",
+    "posterMobile": "/media/poster-mobile.webp",
+    "intro": {
+      "from": 0.3,
+      "to": 3.5,
+      "telugu": "అమ్మ చేతి వంట",
+      "english": "Cooked by Amma's hands"
+    },
+    "dishes": [
+      {
+        "at": 3.6,
+        "name": "Rice",
+        "telugu": "అన్నం"
+      },
+      {
+        "at": 5,
+        "name": "Gongura",
+        "telugu": "గోంగూర"
+      },
+      {
+        "at": 6,
+        "name": "Ghee",
+        "telugu": "నెయ్యి"
+      },
+      {
+        "at": 7.4,
+        "name": "Pappu",
+        "telugu": "పప్పు"
+      },
+      {
+        "at": 8.5,
+        "name": "Chicken Curry",
+        "telugu": "కోడి కూర"
+      }
+    ],
+    "dishesOut": 9.6,
+    "titleAt": 9.8
+  },
+  "story": [
+    {
+      "step": "01",
+      "title": "Fire",
+      "telugu": "పొయ్యి",
+      "teluguEn": "the wood-fire stove",
+      "image": "/media/gallery/f-2.5.webp",
+      "alt": "A woman tending a clay pot over a wood fire in a village courtyard",
+      "lines": [
+        "It starts the way it always has —",
+        "with firewood, a slow flame,",
+        "and someone who knows",
+        "exactly when the dal is ready."
+      ]
+    },
+    {
+      "step": "02",
+      "title": "Clay Pot",
+      "telugu": "మట్టి కుండ",
+      "teluguEn": "the clay pot",
+      "image": "/media/gallery/f-8.5.webp",
+      "alt": "Andhra curry simmering in a terracotta bowl",
+      "lines": [
+        "Clay keeps the heat gentle.",
+        "Curries simmer, spices settle,",
+        "and every pot tastes",
+        "like a village afternoon."
+      ]
+    },
+    {
+      "step": "03",
+      "title": "Banana Leaf",
+      "telugu": "అరిటాకు",
+      "teluguEn": "the banana leaf",
+      "image": "/media/gallery/f-13.webp",
+      "alt": "A full Andhra meal served on a banana leaf",
+      "lines": [
+        "Then it all comes together",
+        "on a fresh banana leaf —",
+        "rice, pappu, pachadi, ghee.",
+        "Eat with your hands. Ask for more."
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/media/gallery/f-1.webp",
+      "alt": "Village courtyard kitchen with banana trees and a thatched roof, morning light",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "src": "/media/dishes/gongura.webp",
+      "alt": "Gongura pachadi spooned onto a banana leaf",
+      "w": 360,
+      "h": 360
+    },
+    {
+      "src": "/media/gallery/f-13.webp",
+      "alt": "A full Andhra bhojanam on a banana leaf with appadams and buttermilk",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "src": "/media/dishes/pappu.webp",
+      "alt": "Yellow pappu ladled beside rice",
+      "w": 360,
+      "h": 360
+    },
+    {
+      "src": "/media/gallery/f-4.5.webp",
+      "alt": "Steaming rice poured onto a banana leaf",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "src": "/media/dishes/chicken.webp",
+      "alt": "Andhra curry in a clay bowl",
+      "w": 360,
+      "h": 360
+    },
+    {
+      "src": "/media/gallery/f-6.5.webp",
+      "alt": "Golden ghee poured over a mound of rice",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "src": "/media/dishes/appadam.webp",
+      "alt": "Crisp appadams on the leaf",
+      "w": 360,
+      "h": 360
+    },
+    {
+      "src": "/media/gallery/f-2.5.webp",
+      "alt": "Stirring a clay pot over a wood fire",
+      "w": 960,
+      "h": 540
+    },
+    {
+      "src": "/media/dishes/buttermilk.webp",
+      "alt": "A brass bowl of buttermilk",
+      "w": 360,
+      "h": 360
+    }
+  ]
+}
